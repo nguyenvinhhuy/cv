@@ -1,77 +1,290 @@
 body{
+    background-color: grey; 
+}
+.main-page { 
+    max-width: 768px; 
     margin: 0 auto;
+    height: auto;
+    display: flex;
+    background-color: white;
+} 
+.left{
+    background-color: #233a6e;
+    width: 35%; 
+}
+.right{
+    width: 65%;
+}
+/* --- top-bar --- */
+.top-bar{
+    background-color: white;
+    margin: auto;
+    width: 94%;
+    height: auto;
+    padding-bottom: 1px;
+}
+.avt-wrapper{
+    align-content: center;
+}
+.avt-img{
     width: 30%;
-    min-width: 960px;
-    
+    margin: 10px auto 0px auto;
 }
-body .head{
-    height: 200px;
-    background: #11e6e6;
-    display: flex;
+.avt-img img{
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    border-radius: 2%; 
+    margin-top: 20px;
 }
-.head div:nth-child(1) {  
-    width: 70%; 
-    /* line-height: 70px; */
-} 
-.head div:nth-child(2) { 
-    width: 30%; 
-    /* line-height: 50px; */
+div h2,h3{
+    text-align: center;
+    color: #233a6e;
 }
-body .head div{
-    padding: 50px;
+.left p{
+    color: white;
 }
-body .head div img{
+p{
+    font-size: 16px;
+}
+.white{
+    color: white;
+}
+/* --- info --- */
+.info-wrapper h3{
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.item-wrapper{
+    height: auto;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    margin: 5px 5px;
+    font-family: serif;
+}
+.icon-wrapper{
+    text-align: center;
+    margin: 0px 5px;
+    height: auto;
     width: auto;
-    height: 125px;
-    padding: 25px auto;    
 }
-.box { 
-    min-height: 300px;
+.info-wrapper{
+    width: 100%;
+}
+.info-wrapper p{
+    margin: 2px;
+    width: auto;
+    height: auto;
+}
+.icon-wrapper i{
+    color: white;
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
+}
+.item-info{
+    width: auto;
+}
+/* --- skills --- */
+.skills-wrapper h3{
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.skills-wrapper {
+    width: auto;
+    height: auto;
+}
+
+.skills-wrapper p{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.item-level-wrapper{
+    border-style: solid;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-width: 1px;
     display: flex;
-} 
-.box div { 
-    margin: 2%; 
-    /* text-align: center;  */
-    /* background-color: #72C953; */
-} 
-.box div:nth-child(1) {  
-    width: 70%; 
-    border-right: 2px solid black;
-    /* line-height: 70px; */
-} 
-.box div:nth-child(2) { 
-    width: 30%; 
-    /* line-height: 50px; */
-} 
-i{
-    background-color: #11e6e6;
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-    font-size:28px;color:floralwhite;
-    margin: 0 20px 0 0;
+    text-align: right;
+    height: 10px;
+    width: auto;
+    border-color: white;
+    background-color: white;
 }
-i:before {
-    font-family: "Font Awesome 6 Free";
-    content: "\f095";
-    display: inline-block;
-    padding:auto 30px;
-    vertical-align: middle;
-    font-weight: 900;
- }
- span{
-     font-weight: bold;
-     font-size: 25px;
- }
- p{
-     font-size: 20px;
- }
- ul{
-    display: block;
-    list-style-type: disc;
-    margin-bottom: 50px;
- }
-ul li{
-    font-size: 20px;
+.Communication-positive{
+    background-color: #182750;
+    height: auto;
+    width: 70%;
 }
- /* -------------------------------------- */
+.planing-positive{
+    background-color: #182750;
+    height: auto;
+    width: 40%;
+}
+.team-work-positive{
+    background-color: #182750;
+    height: auto;
+    width: 50%;
+}
+.research-positive{
+    background-color: #182750;
+    height: auto;
+    width: 50%;
+}
+.english-positive{
+    background-color: #182750;
+    height: auto;
+    width: 50%;
+}
+/* interest */
+.interest-wrapper h3{
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.interest-wrapper p{
+    font-family: serif;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+    margin: 5px 5px;
+}
+.interest-wrapper{
+    margin-bottom: 15px;
+}
+/* ------------------------------------- */
+.info-right-wrapper h3{
+
+    text-align: left;
+    color: black;
+    text-transform: uppercase;
+}
+.item-right-wrapper{
+    height: auto;
+    display: grid;
+    grid-template-columns: 6% 94%;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 5px;
+}
+.icon-right-wrapper{
+    background-color: #182750;
+    text-align: center;
+}
+.info-right-wrapper{
+    width: 100%;
+}
+.info-right-wrapper p{
+    margin: 2px;
+    width: auto;
+    height: auto;
+}
+.icon-right-wrapper i{
+    color: white;
+    margin: 5px auto;
+}
+.item-right{
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+.content-right-wrapper{
+    margin: 5px 30px;
+}
+hr{
+    margin: 3px 30px;
+}
+.tit-work{
+    font-weight: bold;
+    font-size: 18px;
+}
+/* ------------------------------------- */
+:root {
+    --MATH-PI: 3.1415px;
+    --percent: 100;
+}
+ul{
+    padding :0px;
+}
+.tool-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.tool-list > li {
+    position: relative;
+    text-align: center;
+    flex: 0 0 25%;
+}
+.tool-list > li > svg {
+    position: relative;
+    fill: transparent;
+    width: 95%; 
+    transform: rotate(-90deg);
+}
+.tool-list > li > svg > circle {
+    stroke-width: 1px;
+    stroke: #dddddd;
+}
+.tool-list > li > svg > circle.cbar {
+    stroke-width: 4px;
+    stroke: #5a5351;
+    stroke-linecap: round;
+    stroke-dashoffset: calc(var(--MATH-PI) * 45 * 2 * (1 - var(--percent)));
+    stroke-dasharray: calc(var(--MATH-PI) * 45 * 2 );
+}
+.tool-list > li > .tool-name,
+.tool-list > li > .tool-exp {
+    position: absolute;
+    left: 50%;
+    color: black;
+}
+.tool-list > li > .tool-name {
+    top: 40%;
+    font-size: 1.2rem;
+    transform: translate(-50%, -50%);
+}
+.tool-list > li > .tool-exp {
+    top: calc(50% + 1.4rem);    
+    font-size: 1rem;
+    transform: translate(-50%, -50%);
+}
+/* ------------------------------------- */
+@media only screen and (max-width:768px) {
+    .main-page{
+        flex-direction: column;
+    }
+    .main-page .left{
+        width: 100%;
+    }
+    .main-page .right{
+        width: 100%;
+    }
+}
+@media (max-width: 700px) {
+    html {
+      font-size: 80%;
+    }
+    .tool-list {
+      flex-wrap: wrap;
+    }
+    .tool-list > li {
+      flex: 0 0 40%;
+    }
+    .favor-list > li {
+      flex: 0 0 40%;
+    }
+  }
+
+
+
